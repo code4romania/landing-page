@@ -1,5 +1,5 @@
 {
-  "name": "landing-page",
+  "name": "c4r-landing-page",
   "private": true,
   "dependencies": {
     "normalize-css": "^4.1.1",
