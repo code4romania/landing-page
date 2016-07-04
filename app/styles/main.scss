@@ -3,26 +3,8 @@
 // bower:scss
 // endbower
 
-@import url(https://fonts.googleapis.com/css?family=Cardo:400,700,400italic&subset=latin,latin-ext);
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-
-.material-icons {
-  direction: ltr;
-  display: inline-block;
-  font-family: 'Material Icons';
-  font-feature-settings: 'liga';
-  font-size: 24px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: 1;
-  text-rendering: optimizeLegibility;
-  text-transform: none;
-  white-space: nowrap;
-  word-wrap: normal;
-}
+@import url(//fonts.googleapis.com/css?family=Cardo:400,700,400italic&subset=latin,latin-ext);
+@import url(//fonts.googleapis.com/icon?family=Material+Icons);
 
 body {
   background: $color-light;
@@ -35,6 +17,19 @@ body {
 
 a {
   color: $color-secondary;
+  text-decoration: none;
+}
+
+.underline {
+  span {
+    border-bottom: 1px solid $color-secondary;
+  }
+
+  &:hover {
+    span {
+      border-bottom-color: darken($color-secondary, 20);
+    }
+  }
 }
 
 .manifesto {
@@ -67,25 +62,14 @@ a {
 }
 
 .contact {
-  color: $color-text;
   display: inline-block;
-  margin-top: 25px;
+  margin: 10px 0 40px;
   text-decoration: none;
-
-  span {
-    border-bottom: 1px solid $color-text;
-  }
 
   i {
     margin-right: 10px;
     position: relative;
     top: 6px;
-  }
-
-  &:hover {
-    span {
-      border-bottom: 0;
-    }
   }
 }
 
