@@ -3,16 +3,17 @@
 // bower:scss
 // endbower
 
-@import url(//fonts.googleapis.com/css?family=Cardo:400,700,400italic&subset=latin,latin-ext);
+@import url(//fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin-ext);
 @import url(//fonts.googleapis.com/icon?family=Material+Icons);
 
 body {
-  background: $color-light;
-  border-left: 10px solid $color-primary;
+  background-image: linear-gradient(-44deg, #62CAAF 0%, #7E79EE 22%, #3023AE 60%, #0C054E 100%);
   color: $color-text;
-  font-family: 'Cardo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 120%;
+  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.43;
   height: 100vh;
+  min-height: 800px;
 }
 
 a {
@@ -35,30 +36,28 @@ a {
 .manifesto {
   box-sizing: border-box;
   max-width: 700px;
-  padding: 50px 30px;
+  padding: 30px;
+  margin-bottom: 60px;
+
   position: relative;
   width: 100%;
+  background: rgba($color-dark, .4);
+
+  h1, h4, p {
+    color: $color-light;
+  }
 
   @media (min-width: 480px) {
     padding: 50px 5%;
   }
 
-  &::after {
-    background: $color-primary;
-    content: '';
-    display: block;
-    height: 100%;
-    left: -10px;
-    position: absolute;
-    top: 0;
-    width: 10px;
+  @media (min-width: 1024px) {
+    margin: 30px 0 60px 30px
   }
 }
 
 .brand {
   display: inline-block;
-  left: -25px;
-  position: relative;
 }
 
 .contact {
